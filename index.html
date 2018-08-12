@@ -93,6 +93,16 @@ body {
   margin-left: 1rem;
 }
 
+
+.expander-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.special-btn {
+    padding: 12px 30px;
+}
+
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
@@ -105,6 +115,17 @@ body {
   .nav-masthead {
     float: right;
   }
+}
+
+@media (max-width: 600px) {
+    .special-btn {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .expander-input {
+        margin-right: 0;
+    }
 }
 
 
@@ -136,14 +157,6 @@ p.secondary {
 }
 
 
-.expander-input {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-.special-btn {
-    padding: 6px 30px;
-}
 
 /*
  * Footer
@@ -163,7 +176,7 @@ p.secondary {
         <p class="lead">Create, Edit, Manage, and Share you Geospatial Data with a <strong>fast</strong>, and <strong>easy-to-use</strong> Web Interface</p>
         <p class="secondary">Coming Soon. Leave us your email and get updates on our progress</p>
             <form action="" class="form-inline">
-                <input type="email" class="form-control expander-input" placeholder="placeholder@email.com" />
+                <input type="email" class="form-control-lg expander-input" placeholder="placeholder@email.com" />
                 <button type="submit" class="btn btn-primary special-btn">Submit</button>
             </form>
       </main>
